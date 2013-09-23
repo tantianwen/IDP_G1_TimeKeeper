@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IsTime</string>
+    <string name="action_settings">Settings</string>
+    <string name="Calendar_Section">Calendar</string>
+    <string name="Week_Section">Week</string>
+    <string name="Month_Section">Month</string>
+    <string name="Year_Section">Year</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Profile_Section">Profile</string>
+    <string name="Profile_btnSubmit">Submit Profile</string>
+    <string name="title_item_list">Menu Option</string>
+    <string name="title_item_detail">Menu</string>
+
+    <string-array name="menuItem">
+        <item>ProfileActivity.class</item>
+        <item>CalendarActivity.class</item>
+        <item>SummaryActivity.class</item>
+    </string-array>
+
+    <string name="Summary_Section">Summary</string>
+
+</resources>
