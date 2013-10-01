@@ -1,5 +1,7 @@
 package com.example.istime;
 
+import com.example.istime_head.ProfileActivity;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
