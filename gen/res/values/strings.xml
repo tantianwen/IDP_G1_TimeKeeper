@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IsTime</string>
+    <string name="mainmenu_name">Home</string>
+    <string name="login_details">Enter username and password to login</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ISTIME"></string>
+    <string name="title_menuselection_list">MenuSelections</string>
+    <string name="title_menuselection_detail">MenuSelection Detail</string>
+    <string name="title_menuitem_list">MenuItems</string>
+    <string name="title_menuitem_detail">MenuItem Detail</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_calendar_main">CalendarMain</string>
+    <string name="title_activity_summary_main">SummaryMain</string>
+    <string name="menuIcon">menuIcon</string>
+    <string name="action_search">searchIcon</string>
+    <string name="welcome_msg">Welcome User</string>
+
+    
+</resources>

@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Profile2" >
+    
+    <TextView
+        android:id="@+id/edit_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/set_profile_time_message2"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/CheckBox05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:text="Wednesday" />
+
+    <CheckBox
+        android:id="@+id/CheckBox04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox05"
+        android:layout_below="@+id/CheckBox05"
+        android:text="Thursday" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox01"
+        android:layout_below="@+id/CheckBox01"
+        android:text="Tuesday" />
+
+    <CheckBox
+        android:id="@+id/CheckBox03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox04"
+        android:layout_below="@+id/CheckBox04"
+        android:text="Friday" />
+
+    <CheckBox
+        android:id="@+id/CheckBox02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox03"
+        android:layout_below="@+id/CheckBox03"
+        android:text="Saturday" />
+
+    <CheckBox
+        android:id="@+id/CheckBox06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CheckBox02"
+        android:layout_below="@+id/CheckBox02"
+        android:text="Sunday" />
+
+    <CheckBox
+        android:id="@+id/CheckBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_message2"
+        android:layout_below="@+id/edit_message2"
+        android:text="Monday" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckBox01"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/CheckBox05"
+        android:text="@string/work_time"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CheckBox03"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/lunch_time"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignTop="@+id/CheckBox03"
+        android:ems="10"
+        android:inputType="time"
+        android:text="12:00--14:00" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="time"
+        android:text="09:00--18:00" />
+
+    <ImageButton
+        android:id="@+id/navigation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/nagivation_arrow2" />
+
+    <Button
+        android:id="@+id/add_daily_notification"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/navigation_left"
+        android:layout_alignRight="@+id/CheckBox04"
+        android:text="Daily" />
+
+    <Button
+        android:id="@+id/add_weekly_notifications"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/navigation_left"
+        android:layout_alignRight="@+id/TextView01"
+        android:text="Weekly" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckBox06"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/set_profile_time_message3" />
+
+</RelativeLayout>

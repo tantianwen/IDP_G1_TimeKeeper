@@ -5,23 +5,102 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="15"
         android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.MyAppTheme" >
         <activity
             android:name="com.example.istime.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/mainmenu_name" 
+            android:parentActivityName=".MenuItemListActivity"
+            android:theme="@style/Theme.MyAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.istime.MenuSelectionListActivity"
+            android:label="@string/title_menuselection_list" >
+        </activity>
+        <activity
+            android:name="com.example.istime.MenuSelectionDetailActivity"
+            android:label="@string/title_menuselection_detail"
+            android:parentActivityName="com.example.istime.MenuSelectionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuSelectionListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.istime.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
             <intent-filter>
+
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>    
         </activity>
+        <activity
+            android:name="com.example.istime.MenuItemListActivity"
+            android:label="@string/title_menuitem_list" >
+            <!-- Main Launch for the menu items -->
+        </activity>
+        <activity
+            android:name="com.example.istime.MenuItemDetailActivity"
+            android:label="@string/title_menuitem_detail"
+            android:parentActivityName=".MenuItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.istime.summary.SummaryMain"
+            android:label="@string/title_activity_summary_main" >
+        </activity>
+        <activity
+            android:name="com.example.istime.other.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        
+        <!-- Profile Activity -->
+                <activity
+            android:name="com.example.istime.profile.Profile1"
+            android:label="@string/profileName" >
+        </activity>
+        <activity
+            android:name="com.example.istime.profile.Profile2"
+            android:label="@string/profileName" >
+        </activity>
+        <activity
+            android:name="com.example.istime.profile.AddProfile"
+            android:label="@string/title_activity_add_profile" >
+        </activity>
+        <activity
+            android:name="com.example.istime.profile.DailyNotification"
+            android:label="@string/title_activity_daily_notification" >
+        </activity>
+        <activity
+            android:name="com.example.istime.profile.WeeklyNotification"
+            android:label="@string/title_activity_weekly_notification" >
+        </activity>
+        
+        <!-- Calendar -->
+        
+        <activity
+            android:name="com.example.istime.calendar.CalendarActivity"
+            android:label="@string/calendarName" >
+        </activity>
+        <activity
+            android:name="com.example.istime.calendar.CalendarDayViewActivity"
+            android:label="@string/calendarDayView" >
+        </activity>
+        
     </application>
 
 </manifest>

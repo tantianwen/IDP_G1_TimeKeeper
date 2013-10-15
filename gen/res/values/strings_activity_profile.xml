@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="profileName">Profile</string>
+    <string name="title_section1">Page 1</string>
+    <string name="title_section2">Page 2</string>
+    <string name="set_profile_time_message">Set the time you wish to spend with the following</string>
+    <string name="set_profile_time_message2">Set the time of your working day and time</string>
+    <string name="set_profile_time_message3">When you want to receive your evaluation?</string>
+    <string name="button_add">Add</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">delete</string>
+    <string name="category">Category</string>
+    <string name="hour">Hour</string>
+    <string name="family">Family</string>
+    <string name="friend">Friend</string>
+    <string name="family_time">30</string>
+    <string name="friend_time">15</string>
+    <string name="work_time">Work Time</string>
+    <string name="lunch_time">Lunch Time</string>
+    <string name="title_activity_profile1">Profile1</string>
+    <string name="title_activity_profile2">Profile2</string>
+    <string name="title_activity_add_profile">AddProfile</string>
+    <string name="title_activity_daily_notification">DailyNotification</string>
+    <string name="button_submit">Submit</string>
+    <string name="title_activity_weekly_notification">WeeklyNotification</string>
+
+    <string-array name="days_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+</resources>

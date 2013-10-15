@@ -1,10 +1,9 @@
 package com.example.istime;
 
-import com.example.istime_head.ProfileActivity;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -28,7 +27,7 @@ public class LoginActivity extends Activity {
 	 * TODO: remove after connecting to a real authentication system.
 	 */
 	private static final String[] DUMMY_CREDENTIALS = new String[] {
-			"jz.peng.2011@sis.smu.edu.sg:jianzhang", "bar@example.com:world" };
+			"foo@example.com:hello", "bar@example.com:world" };
 
 	/**
 	 * The default email to populate the email field with.
@@ -54,7 +53,8 @@ public class LoginActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		ActionBar actionBar = getActionBar();
+		actionBar.hide();
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
@@ -228,9 +228,9 @@ public class LoginActivity extends Activity {
 			showProgress(false);
 
 			if (success) {
-				//finish();
-				Intent i = new Intent(LoginActivity.this, ProfileActivity.class);
+				Intent i = new Intent(LoginActivity.this, MainActivity.class);
 				startActivity(i);
+				//finish();
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));

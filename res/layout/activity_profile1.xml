@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Profile1" >
+
+    <TextView
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/set_profile_time_message"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/hour_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/category_label"
+        android:layout_alignBottom="@+id/category_label"
+        android:layout_alignRight="@+id/edit_message"
+        android:layout_marginRight="15dp"
+        android:hint="@string/hour"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/edit_message"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/family_time" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignTop="@+id/imageView2"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/friend_time" />
+
+    <ImageButton
+        android:id="@+id/navigation_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/nagivation_arrow1" />
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/edit_message"
+        android:layout_marginTop="19dp"
+        android:hint="@string/category"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/navigation_right"
+        android:layout_alignRight="@+id/EditText01"
+        android:layout_marginBottom="36dp"
+        android:text="@string/button_delete" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/Button01"
+        android:text="@string/button_add" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:text="@string/family" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/category_label"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/family_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/checkBox1"
+        android:src="@drawable/friend_icon" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_add"
+        android:layout_below="@+id/imageView2"
+        android:text="@string/friend" />
+
+</RelativeLayout>

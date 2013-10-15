@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <item
+        android:id="@+id/action_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"        
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_search"/>
+    
+     <!-- <group android:id="@+id/menuSelect" android:visible="true" android:enabled="true" android:orderInCategory="100">
+        <item android:id="@+id/menuIcon"
+              android:onClick="onGroupItemClick"
+              android:title="@string/menuIcon"
+              android:icon="@drawable/ic_navigation_drawer"
+              android:showAsAction="ifRoom|withText" />
+        <item android:id="@+id/action_logo"
+              android:onClick="onGroupItemClick"
+              android:title="@string/app_name"
+              android:icon="@drawable/ic_launcher"
+              android:showAsAction="ifRoom|withText" />
+    </group>-->
+        
+
+    
+
+    
+
+
+</menu>
