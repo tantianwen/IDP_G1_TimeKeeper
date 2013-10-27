@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Profile1"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,110 +9,141 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Profile1" >
 
-    <TextView
-        android:id="@+id/edit_message"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/set_profile_time_message"
-        android:textSize="12sp" />
+        android:layout_weight="0" >
 
-    <TextView
-        android:id="@+id/hour_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/category_label"
-        android:layout_alignBottom="@+id/category_label"
-        android:layout_alignRight="@+id/edit_message"
-        android:layout_marginRight="15dp"
-        android:hint="@string/hour"
-        android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignBottom="@+id/imageView1"
-        android:layout_alignRight="@+id/edit_message"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/family_time" />
+            <TableLayout
+                android:id="@+id/profile1_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*" >
 
-    <EditText
-        android:id="@+id/EditText01"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignTop="@+id/imageView2"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/friend_time" />
+                <TableRow>
 
-    <ImageButton
-        android:id="@+id/navigation_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/nagivation_arrow1" />
+                    <TextView
+                        android:id="@+id/profile_lblName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Name"
+                        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/category_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_below="@+id/edit_message"
-        android:layout_marginTop="19dp"
-        android:hint="@string/category"
-        android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/profile_txtName"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" />
+                </TableRow>
 
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/navigation_right"
-        android:layout_alignRight="@+id/EditText01"
-        android:layout_marginBottom="36dp"
-        android:text="@string/button_delete" />
+                <TableRow>
 
-    <Button
-        android:id="@+id/button_add"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/Button01"
-        android:text="@string/button_add" />
+                    <TextView android:layout_height="wrap_content" />
+                </TableRow>
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
-        android:text="@string/family" />
+                <TableRow>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignLeft="@+id/checkBox1"
-        android:layout_below="@+id/category_label"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="18dp"
-        android:src="@drawable/family_icon" />
+                    <TextView
+                        android:id="@+id/edit_message"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/set_profile_time_message"
+                        android:textSize="12sp" />
+                </TableRow>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_below="@+id/checkBox1"
-        android:src="@drawable/friend_icon" />
+                <TableRow>
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_add"
-        android:layout_below="@+id/imageView2"
-        android:text="@string/friend" />
+                    <TextView
+                        android:id="@+id/category_label"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/category"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/hour_label"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/hour"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/profile_lblFamily"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Family"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/profile_txtFamilyHr"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="@string/family_time" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/family_icon" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/profile_lblFriends"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Friends"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/profile_txtFriendsHr"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/friend_time" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/friend_icon" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -2,8 +2,8 @@
 <resources>
 
     <string name="profileName">Profile</string>
-    <string name="title_section1">Page 1</string>
-    <string name="title_section2">Page 2</string>
+    <string name="title_section1">Profile Category</string>
+    <string name="title_section2">Work Schedule</string>
     <string name="set_profile_time_message">Set the time you wish to spend with the following</string>
     <string name="set_profile_time_message2">Set the time of your working day and time</string>
     <string name="set_profile_time_message3">When you want to receive your evaluation?</string>
@@ -24,7 +24,8 @@
     <string name="title_activity_daily_notification">DailyNotification</string>
     <string name="button_submit">Submit</string>
     <string name="title_activity_weekly_notification">WeeklyNotification</string>
-
+	<string name="uploadImage">Upload</string>
+	<string name="ab_addNewCat">Add Category</string>
     <string-array name="days_array">
         <item>Monday</item>
         <item>Tuesday</item>

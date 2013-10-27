@@ -5,6 +5,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -16,6 +19,10 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.istime.profile.ProfileManager;
+import com.example.istime.profile.ProfileManager.Profile;
+import com.example.istime.profile.ProfilemainActivity;
 
 /**
  * Activity which displays a login screen to the user, offering registration as
@@ -42,14 +49,16 @@ public class LoginActivity extends Activity {
 	// Values for email and password at the time of the login attempt.
 	private String mEmail;
 	private String mPassword;
-
+	private static int ALERT_DIALOG;
 	// UI references.
 	private EditText mEmailView;
 	private EditText mPasswordView;
 	private View mLoginFormView;
 	private View mLoginStatusView;
 	private TextView mLoginStatusMessageView;
-
+	
+	final Context context = this;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -222,22 +231,58 @@ public class LoginActivity extends Activity {
 			return true;
 		}
 
+		@SuppressWarnings("deprecation")
 		@Override
 		protected void onPostExecute(final Boolean success) {
 			mAuthTask = null;
 			showProgress(false);
 
 			if (success) {
-				Intent i = new Intent(LoginActivity.this, MainActivity.class);
-				startActivity(i);
-				//finish();
+				Profile p = ProfileManager.getProfile(mEmail);
+				Intent i;
+				if (p != null) {
+					i = new Intent(LoginActivity.this, MainActivity.class);
+					i.putExtra("email", mEmail);
+					startActivity(i);
+				} else {
+
+			        //AlertDialog alertDialog = new AlertDialog.Builder(context).create(); //Read Update
+					AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+					alertDialog.setTitle("New Registration");
+			        alertDialog.setMessage("This email is not registered, we will direct you to setup new profile");
+			        
+			        alertDialog.setPositiveButton("Cancel",new DialogInterface.OnClickListener() {
+				           public void onClick(DialogInterface dialog, int which) {
+				              // here you can add functions
+				           }
+				        });
+
+			        
+			        alertDialog.setNegativeButton("Okay",new DialogInterface.OnClickListener() {
+			           public void onClick(DialogInterface dialog, int which) {
+			              // here you can add functions
+							Intent a = new Intent(LoginActivity.this,
+									ProfilemainActivity.class);
+							startActivity(a);
+			           }
+			        });
+			        
+
+			        alertDialog.show();  //<-- See This!
+					
+
+
+				}
+				
+				// finish();
 			} else {
 				mPasswordView
 						.setError(getString(R.string.error_incorrect_password));
 				mPasswordView.requestFocus();
 			}
 		}
-
+		
+		
 		@Override
 		protected void onCancelled() {
 			mAuthTask = null;

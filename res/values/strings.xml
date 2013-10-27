@@ -17,6 +17,9 @@
     <string name="menuIcon">menuIcon</string>
     <string name="action_search">searchIcon</string>
     <string name="welcome_msg">Welcome User</string>
+    <string name="title_activity_profilemain">MainActivity</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_new_calendar_event">NewCalendarEvent</string>
+    <string name="title_activity_calendar_day_view">CalendarDayView</string>
 
-    
 </resources>

@@ -15,9 +15,9 @@
         android:theme="@style/Theme.MyAppTheme" >
         <activity
             android:name="com.example.istime.MainActivity"
-            android:label="@string/mainmenu_name" 
+            android:label="@string/mainmenu_name"
             android:parentActivityName=".MenuItemListActivity"
-            android:theme="@style/Theme.MyAppTheme">
+            android:theme="@style/Theme.MyAppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuItemListActivity" />
@@ -44,11 +44,12 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>    
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.istime.MenuItemListActivity"
             android:label="@string/title_menuitem_list" >
+
             <!-- Main Launch for the menu items -->
         </activity>
         <activity
@@ -67,11 +68,12 @@
             android:name="com.example.istime.other.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
-        
+
         <!-- Profile Activity -->
-                <activity
+        <activity
             android:name="com.example.istime.profile.Profile1"
-            android:label="@string/profileName" >
+            android:label="@string/profileName"
+            android:theme="@style/Theme.ProfileTheme" >
         </activity>
         <activity
             android:name="com.example.istime.profile.Profile2"
@@ -89,9 +91,9 @@
             android:name="com.example.istime.profile.WeeklyNotification"
             android:label="@string/title_activity_weekly_notification" >
         </activity>
-        
+
         <!-- Calendar -->
-        
+
         <activity
             android:name="com.example.istime.calendar.CalendarActivity"
             android:label="@string/calendarName" >
@@ -100,7 +102,24 @@
             android:name="com.example.istime.calendar.CalendarDayViewActivity"
             android:label="@string/calendarDayView" >
         </activity>
-        
+        <activity
+            android:name="com.example.istime.profile.ProfilemainActivity"
+            android:label="@string/profileName"
+            android:theme="@style/Theme.ProfileTheme" >
+        </activity>
+        	<activity
+            android:name="com.example.istime.calendar.NewCalendarEvent"
+            android:label="@string/title_activity_new_calendar_event" >
+        </activity>
+        <activity
+            android:name="com.example.istime.calendar.CalendarDayView"
+            android:label="@string/title_activity_calendar_day_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

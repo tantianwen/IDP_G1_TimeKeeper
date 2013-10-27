@@ -1,61 +1,94 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AddProfile" >
+    android:id="@+id/profile_addCategory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_bg"
+    android:orientation="horizontal"
+    android:padding="10sp" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="36dp"
-        android:text="Name"
-        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:ems="10" >
-    </EditText>
+            <ImageView
+                android:id="@+id/profile_imageUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="29dp"
-        android:text="Hours to spend"
-        android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="New Category"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_alignTop="@+id/textView3"
-        android:ems="10"
-        android:inputType="number"
-        android:text="10"
-        android:textSize="20sp" >
+            <TextView
+                android:id="@+id/profile_lbCatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/profile_lbHoursSpent"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="20sp" />
 
-        <requestFocus />
-    </EditText>
+            <EditText
+                android:id="@+id/profile_AddNewCatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/profile_lbCatName"
+                android:layout_alignBottom="@+id/profile_lbCatName"
+                android:layout_alignLeft="@+id/profile_imageUpload"
+                android:layout_weight="1"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/profile_lbHoursSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_AddNewCatName"
+                android:layout_marginTop="22dp"
+                android:layout_toLeftOf="@+id/profile_imageUpload"
+                android:layout_weight="1"
+                android:text="Hours to spend"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/profile_addCatNumOfHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/profile_lbHoursSpent"
+                android:layout_alignBottom="@+id/profile_lbHoursSpent"
+                android:layout_alignLeft="@+id/profile_AddNewCatName"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="10"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Profile_btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_addCatNumOfHours"
+                android:layout_toRightOf="@+id/profile_lbCatName"
+                android:layout_weight="1"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/Profile_btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_below="@+id/profile_addCatNumOfHours"
+                android:layout_weight="1"
+                android:text="Cancel" />
 
 </RelativeLayout>

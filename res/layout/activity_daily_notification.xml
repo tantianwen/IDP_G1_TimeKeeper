@@ -1,35 +1,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_set_to_bottom"
-    tools:context=".DailyNotification" >
+    android:id="@+id/profile_dailyNotification"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_bg"
+    android:orientation="horizontal"
+    android:padding="10sp" >
 
-    <Button
-        android:id="@+id/daily_notification_submit"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="22dp"
-        android:hint="@string/button_submit" />
-
-    <Button
-        android:id="@+id/daily_notification_cancel"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_alignBaseline="@+id/daily_notification_submit"
-        android:layout_alignBottom="@+id/daily_notification_submit"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="39dp"
-        android:hint="@string/button_cancel" />
+    <TextView
+        android:id="@+id/lblDailyNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Please select time for daily notification" />
 
     <TimePicker
-        android:id="@+id/timePicker1"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_above="@+id/daily_notification_submit"
-        android:layout_alignParentLeft="true" />
+        android:id="@+id/Profile_DailyNotificationTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDailyNotification"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnProfileDailyNotificationSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Profile_DailyNotificationTimePicker"
+        android:layout_below="@+id/Profile_DailyNotificationTimePicker"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnProfileDailyNotificationCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnProfileDailyNotificationSubmit"
+        android:layout_alignBottom="@+id/btnProfileDailyNotificationSubmit"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/btnProfileDailyNotificationSubmit"
+        android:text="Cancel" />
 
 </RelativeLayout>

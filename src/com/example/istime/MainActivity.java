@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.example.istime.profile.ProfileManager;
+import com.example.istime.profile.ProfileManager.Profile;
 
 public class MainActivity extends Activity {
 
@@ -16,6 +20,12 @@ public class MainActivity extends Activity {
         
         //getActionBar().setDisplayHomeAsUpEnabled(false);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView tv = (TextView) findViewById(R.id.welcome_text);
+        
+        String email = getIntent().getExtras().getString("email");
+        Profile p = ProfileManager.getProfile(email);
+        tv.setText("Welcome, " + p.getProfileName());
+        
     }
       
     @Override

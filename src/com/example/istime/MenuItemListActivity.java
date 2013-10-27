@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentActivity;
 
 import com.example.istime.calendar.CalendarActivity;
 import com.example.istime.other.SettingsActivity;
-import com.example.istime.profile.Profile1;
+import com.example.istime.profile.ProfilemainActivity;
 import com.example.istime.summary.SummaryMain;
 
 /**
@@ -68,7 +68,7 @@ public class MenuItemListActivity extends FragmentActivity implements
 		}
 		else if(id.equals("Profile"))
 		{
-			startActivity(new Intent(this, Profile1.class));
+			startActivity(new Intent(this, ProfilemainActivity.class));
 			
 		}
 		else if(id.equals("Calendar"))
@@ -88,7 +88,7 @@ public class MenuItemListActivity extends FragmentActivity implements
 		}
 		else if(id.equals("Logout"))
 		{
-			startActivity(new Intent(this, LogoutActivity.class));
+			startActivity(new Intent(this, LoginActivity.class));
 			
 		}
 		

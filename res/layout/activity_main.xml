@@ -9,14 +9,140 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="91dp"
-        android:layout_marginTop="21dp"
         android:text="@string/welcome_msg"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/main_menu_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_text"
+        android:layout_below="@+id/welcome_text"
+        android:layout_marginTop="18dp"
+        android:text="From" />
+
+    <EditText
+        android:id="@+id/main_menu_from_date"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/main_menu_from"
+        android:layout_alignBottom="@+id/main_menu_from"
+        android:layout_toRightOf="@+id/main_menu_from"
+        android:ems="10"
+        android:inputType="date"
+        android:text="17/10/2013" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/main_menu_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_menu_from_date"
+        android:layout_alignBottom="@+id/main_menu_from_date"
+        android:layout_toRightOf="@+id/main_menu_from_date"
+        android:text="To" />
+
+    <EditText
+        android:id="@+id/main_menu_to_date"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/main_menu_to"
+        android:layout_alignBottom="@+id/main_menu_to"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date"
+        android:text="24/10/2013" />
+
+    <TextView
+        android:id="@+id/main_menu_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_menu_from_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Performance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_menu_performance_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_menu_performance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Good"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_menu_performance_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="You have reached goal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/main_menu_category_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/main_menu_from_date"
+        android:layout_below="@+id/main_menu_performance_info2"
+        android:layout_marginTop="40dp"
+        android:text="Family"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/main_menu_category_percentage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_menu_category_name1"
+        android:layout_alignLeft="@+id/main_menu_to_date"
+        android:text="35%"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_menu_category_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_menu_category_name1"
+        android:layout_alignTop="@+id/main_menu_category_percentage2"
+        android:text="Friend"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/main_menu_category_percentage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_menu_category_percentage1"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/main_menu_to"
+        android:text="20%"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/main_menu_view_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_menu_view_calendar"
+        android:layout_alignBottom="@+id/main_menu_view_calendar"
+        android:layout_alignRight="@+id/main_menu_to_date"
+        android:text="Summary" />
+
+    <Button
+        android:id="@+id/main_menu_view_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_menu_category_percentage2"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/main_menu_category_name2"
+        android:text="Calendar" />
 
 </RelativeLayout>

@@ -9,7 +9,7 @@ public class CategoryDialogFragment extends DialogFragment {
      * implement this interface in order to receive event callbacks.
      * Each method passes the DialogFragment in case the host needs to query it. */
     public interface CategoryDialogListener {
-        public void onDialogPositiveClick(DialogFragment dialog);
+        public void onDialogPositiveClick(DialogFragment dialog, String catName, String numHours);
         public void onDialogNegativeClick(DialogFragment dialog);
     }
     
