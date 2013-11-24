@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/profile_settings_settingsScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white_bg">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/faq" />
+
+    <Button
+        android:id="@+id/Setting_FAQbtnOk"
+        style="@style/ButtonText"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_yellow"
+        android:text="Okay" />
+
+    <TextView
+        android:id="@+id/FAQHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:text="FAQ Questions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/orange_bg"
+        android:textStyle="bold" />
+
+</RelativeLayout>

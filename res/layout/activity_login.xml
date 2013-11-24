@@ -40,7 +40,7 @@
         <LinearLayout
             style="@style/LoginFormContainer"
             android:layout_width="match_parent"
-            android:layout_height="86dp"
+            android:layout_height="417dp"
             android:gravity="center_horizontal"
             android:orientation="vertical" >
 
@@ -55,8 +55,8 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.01"
                 android:layout_marginTop="20dp"
+                android:layout_weight="0.01"
                 android:text="@string/login_details"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -65,10 +65,10 @@
                 android:layout_width="189dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="top"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/textfield_border"
                 android:ellipsize="start"
+                android:gravity="top"
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -80,31 +80,29 @@
                 android:layout_width="189dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="top"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/textfield_border"
-    			android:textColor="#000000"
-    			android:ellipsize="start"
+                android:ellipsize="start"
+                android:gravity="top"
                 android:hint="@string/prompt_password"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/sign_in_button"
+                style="@style/ButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
-                android:background="@color/blue_bg"
+                android:background="@drawable/btn_blue"
                 android:text="@string/action_sign_in_short" />
-        </LinearLayout>
 
+        </LinearLayout>
     </ScrollView>
 
 </merge>

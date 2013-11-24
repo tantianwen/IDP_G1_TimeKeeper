@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +37,6 @@ public class CalendarDayView extends ListActivity {
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_calendar_day_view, storage.getTimeArray()));
 		ListView listView = getListView();
 		listView.setTextFilterEnabled(true);
-
 	 }
 
 	
@@ -56,12 +56,12 @@ public class CalendarDayView extends ListActivity {
     
     public void redirect(String selectedTime, String selectedDate) {
     	
-		Intent intentRedirect = new Intent(this, NewCalendarEvent.class);
+		Intent intentRedirect = new Intent(this, AddActivity.class);
 		ArrayList<String> dateTimeArray = new ArrayList<String>();
 		dateTimeArray.add(selectedTime);
 		dateTimeArray.add(selectedDate);
 		intentRedirect.putExtra(EXTRA_DATETIME, dateTimeArray);
-		startActivity(intentRedirect);
+		startActivityForResult(intentRedirect,999);
 		finish();
 		
     }

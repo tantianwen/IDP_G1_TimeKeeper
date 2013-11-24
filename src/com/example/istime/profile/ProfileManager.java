@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class ProfileManager {
 
 	public static HashMap<String, Profile> profileInfo = new HashMap<String, Profile>();
+	public static String profileEmail="";
 	
 	static {
 		loadProfileInfo();
@@ -41,6 +42,11 @@ public class ProfileManager {
 		
 	}
 	
+	public static void addProfile(Profile p){
+		String theEmail = p.getEmail();
+		profileInfo.put(theEmail,p);
+	}
+	
 	public static void updateProfile(Profile profile){
 		String email = profile.getEmail();
 		profileInfo.put(email, profile);
@@ -50,6 +56,14 @@ public class ProfileManager {
 		Profile p;
 		p=profileInfo.get(email);
 		return p;
+	}
+	
+	public static void setProfileEmail(String email){
+		profileEmail = email;
+	}
+	
+	public static String getProfileEmail(){
+		return profileEmail;
 	}
 	
 	

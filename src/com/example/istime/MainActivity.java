@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.istime.profile.ProfileManager;
 import com.example.istime.profile.ProfileManager.Profile;
+import com.example.istime.summary.PieChart;
 
 public class MainActivity extends Activity {
 
@@ -18,13 +21,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        //getActionBar().setDisplayHomeAsUpEnabled(false);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         TextView tv = (TextView) findViewById(R.id.welcome_text);
         
+        //String username = getIntent().getExtras().getString("username");
         String email = getIntent().getExtras().getString("email");
         Profile p = ProfileManager.getProfile(email);
-        tv.setText("Welcome, " + p.getProfileName());
+        tv.setText("Welcome, "+p.getProfileName());// + p.getProfileName());
+        RelativeLayout chartLayout = (RelativeLayout) findViewById(R.id.chartAnalysis);
+        PieChart chartView = new PieChart(this);
+        chartView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,300));
+        chartLayout.addView(chartView);
         
     }
       

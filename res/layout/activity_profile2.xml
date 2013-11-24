@@ -114,53 +114,15 @@
         android:inputType="time"
         android:text="09:00--18:00" />
 
-    <!--
-    <Button
-        android:id="@+id/add_daily_notification"
-        android:layout_width="85dp"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/CheckBox04"
-        android:layout_marginBottom="46dp"
-        android:text="Daily" />
-
-    <Button
-        android:id="@+id/add_weekly_notifications"
-        android:layout_width="85dp"
-        android:layout_height="80dp"
-        android:layout_alignBaseline="@+id/add_daily_notification"
-        android:layout_alignBottom="@+id/add_daily_notification"
-        android:layout_alignRight="@+id/TextView01"
-        android:text="Weekly" />
-    -->
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/CheckBox06"
-        android:layout_marginTop="18dp"
-        android:text="Do you want to receive the weekly notification?"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <CheckBox
-        android:id="@+id/CheckBox07"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/profile_submit"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_marginBottom="14dp"
-        android:text="Yes" />
-
     <Button
         android:id="@+id/profile_submit"
+        style="@style/ButtonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/CheckBox06"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
-        android:text="Submit" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_yellow"
+        android:text="submit" />
 
 </RelativeLayout>

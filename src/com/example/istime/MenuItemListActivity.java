@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentActivity;
 import com.example.istime.calendar.CalendarActivity;
 import com.example.istime.other.SettingsActivity;
 import com.example.istime.profile.ProfilemainActivity;
-import com.example.istime.summary.SummaryMain;
 
 /**
  * An activity representing a list of MenuItems. This activity has different
@@ -74,11 +73,6 @@ public class MenuItemListActivity extends FragmentActivity implements
 		else if(id.equals("Calendar"))
 		{
 			startActivity(new Intent(this, CalendarActivity.class));
-			
-		}
-		else if(id.equals("Summary"))
-		{
-			startActivity(new Intent(this, SummaryMain.class));
 			
 		}
 		else if(id.equals("Settings"))

@@ -28,7 +28,6 @@ public class MainMenuContent {
 		addItem(new MenuItem("Home", "home"));
 		addItem(new MenuItem("Profile", "profile"));
 		addItem(new MenuItem("Calendar", "calendar"));
-		addItem(new MenuItem("Summary", "summary"));
 		addItem(new MenuItem("Settings", "settings"));
 		addItem(new MenuItem("Logout", "logout"));
 	}

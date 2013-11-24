@@ -93,13 +93,13 @@ public class CalendarActivity extends Activity {
 	}
 	
 	public void redirect(String selectedDate) {
-		updateList();
+		//updateList();
 		Intent intentRedirect = new Intent(this, CalendarDayView.class);
 		intentRedirect.putExtra(EXTRA_MESSAGE, selectedDate);
 		startActivity(intentRedirect);		
 	}
 
-	public void updateList() {
+/*	public void updateList() {
 		ArrayList<String> timeArray = storage.getTimeArray();
 		ArrayList<Event>  eventArray = storage.getEventArray();
 		ArrayList<String> newTimeArray = storage.newTimeArray();
@@ -160,7 +160,7 @@ public class CalendarActivity extends Activity {
 								
 								String updateMsg = eventArray.get(i).getEventStartTime().concat(" to ").concat(eventArray.get(i).getEventEndTime())
 													.concat(" | ").concat(eventArray.get(i).getEvent().concat(" | ").concat(eventArray.get(i).getCategory()));
-								x=a;
+								x=a; 
 								if(a == 0) {
 									time = newTimeArray.get(j).concat(":00");
 									System.out.println("Time 1 is:" + time);
@@ -195,7 +195,7 @@ public class CalendarActivity extends Activity {
 					}
 			}
 		}
-	}
+	} */
 	
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

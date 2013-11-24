@@ -263,6 +263,7 @@ public class LoginActivity extends Activity {
 			              // here you can add functions
 							Intent a = new Intent(LoginActivity.this,
 									ProfilemainActivity.class);
+							a.putExtra("email", mEmail);
 							startActivity(a);
 			           }
 			        });

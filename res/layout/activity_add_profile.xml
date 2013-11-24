@@ -75,20 +75,24 @@
 
             <Button
                 android:id="@+id/Profile_btnAdd"
+                        style="@style/ButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile_addCatNumOfHours"
                 android:layout_toRightOf="@+id/profile_lbCatName"
+                        android:background="@drawable/btn_yellow"
                 android:layout_weight="1"
                 android:text="Add" />
 
             <Button
                 android:id="@+id/Profile_btnCancel"
+                style="@style/ButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/textView1"
                 android:layout_below="@+id/profile_addCatNumOfHours"
+                android:layout_toRightOf="@+id/profile_imageUpload"
                 android:layout_weight="1"
+                android:background="@drawable/btn_red"
                 android:text="Cancel" />
 
 </RelativeLayout>

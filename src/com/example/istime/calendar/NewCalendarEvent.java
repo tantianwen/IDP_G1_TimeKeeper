@@ -140,5 +140,5 @@ public class NewCalendarEvent extends Activity implements OnTimeChangedListener 
 		// Inflate the menu; this adds items to the action bar if it is present.
 		//getMenuInflater().inflate(R.menu.new_calendar_event, menu);
 		return true;
-	}
+	} 
 }

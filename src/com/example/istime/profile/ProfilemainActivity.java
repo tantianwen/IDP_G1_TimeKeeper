@@ -1,5 +1,6 @@
 package com.example.istime.profile;
 
+import java.util.HashMap;
 import java.util.Locale;
 
 import android.app.ActionBar;
@@ -12,11 +13,13 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,9 +32,10 @@ import android.widget.TextView;
 import com.example.istime.MainActivity;
 import com.example.istime.MenuItemListActivity;
 import com.example.istime.R;
+import com.example.istime.profile.ProfileManager.Profile;
 
 public class ProfilemainActivity extends FragmentActivity implements
-		ActionBar.TabListener {
+		ActionBar.TabListener, OnClickListener{
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -49,18 +53,25 @@ public class ProfilemainActivity extends FragmentActivity implements
 	ViewPager mViewPager;
 	Menu _menu;
 	Spinner spinner;
-
+	static String username = "";
+	static Button submitBtn;
+	static EditText profileName;
+	static Intent i;
+	static String email = "";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.profilemain);
-
+		i = new Intent(ProfilemainActivity.this,MainActivity.class);
+		email = getIntent().getExtras().getString("email");
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.profile_actionbar, menu);
+		
 		_menu = menu;
 
 		// Set up the action bar.
@@ -211,6 +222,7 @@ public class ProfilemainActivity extends FragmentActivity implements
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.activity_profile1,
 					container, false);
+			profileName = (EditText) rootView.findViewById(R.id.profile_txtName);
 			return rootView;
 		}
 	}
@@ -227,6 +239,30 @@ public class ProfilemainActivity extends FragmentActivity implements
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.activity_profile2,
 					container, false);
+			submitBtn = (Button) rootView.findViewById(R.id.profile_submit);
+			
+			//View profileView = inflater.inflate(R.layout.activity_profile1, container, false);
+			//profileName = (EditText) findViewById(R.id.profile_txtName);
+			//username = profileName.getText().toString();
+			//Log.i("the name is1",username);
+			submitBtn.setOnClickListener(new OnClickListener() {
+		        @Override
+		        public void onClick(View v) {
+		        	//Actual execution of OnClick Submit
+		        	username = profileName.getText().toString();
+		        	HashMap<String,Double> cateogryDetail = new HashMap<String,Double>();
+		        	cateogryDetail.put("Family",30.0);
+		        	cateogryDetail.put("Friend",10.0);
+		        	cateogryDetail.put("Personal",10.0);
+		        	
+		        	Profile p = new Profile(email,username,cateogryDetail,null,null,null,null);
+		        	ProfileManager.addProfile(p);
+		        	Log.i("the name is",username);
+		        	i.putExtra("email", email);
+					
+		        	startActivity(i);
+		        }
+		    });
 			return rootView;
 		}
 	}
@@ -241,7 +277,7 @@ public class ProfilemainActivity extends FragmentActivity implements
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		final View layout = inflater.inflate(R.layout.activity_add_profile,
 				(ViewGroup) findViewById(R.id.profile_addCategory));
-		pwindo = new PopupWindow(layout, 400, 450, true);
+		pwindo = new PopupWindow(layout, 400, 500, true);
 		pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
 		Button btnAddPopup = (Button) layout.findViewById(R.id.Profile_btnAdd);
@@ -289,6 +325,7 @@ public class ProfilemainActivity extends FragmentActivity implements
 		newCat.setTextSize(20);
 		// newCat.setLayoutParams(new
 		// LinearLayout.LayoutParams(0,LinearLayout.LayoutParams.WRAP_CONTENT,1));
+		tlparams.setMargins(0, 0, 0, 20);
 		newCat.setLayoutParams(tlparams);
 		tablerow.addView(newCat);
 		final EditText newCatHrs = new EditText(this);
@@ -298,12 +335,13 @@ public class ProfilemainActivity extends FragmentActivity implements
 		newCatHrs.setGravity(Gravity.CENTER_HORIZONTAL);
 		newCatHrs.setLayoutParams(tlparams);
 		tablerow.addView(newCatHrs);
-		Button btnDelete = new Button(this, null,
-				android.R.attr.buttonStyleSmall);
+		//Button btnDelete = new Button(this, null, android.R.attr.buttonStyleSmall);
+		Button btnDelete = new Button(this, null, R.style.SmallButtonText);
 		btnDelete.setGravity(Gravity.CENTER_HORIZONTAL);
-		btnDelete.setHeight(10);
-		btnDelete.setWidth(10);
+		//btnDelete.setHeight(10);
+		//btnDelete.setWidth(10);
 		btnDelete.setText("Delete");
+		btnDelete.setBackgroundResource(R.drawable.btn_red);
 		btnDelete.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -316,27 +354,41 @@ public class ProfilemainActivity extends FragmentActivity implements
 
 		tablerow.addView(btnDelete);
 		newTable.addView(tablerow);
-	}
 
+	}
+	/*
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.activity_profile2, container, false);
-	}
+		View view = inflater.inflate(R.layout.activity_profile2, container, false);
+		submitBtn = (Button) view.findViewById(R.id.profile_submit);
+		//submitBtn.setOnClickListener(this);
+		submitBtn.setOnClickListener(new OnClickListener() {
+	        @Override
+	        public void onClick(View v) {
+	        	
+	        	System.out.println("ZNM");
+	        	Log.i("APP","ZNM");
+	        	Intent i = new Intent(ProfilemainActivity.this,MainActivity.class);
+	        	startActivity(i);
+	        }
+	    });
+		
+		
+		 return view;
+		
+	}*/
 	
-	public void onViewCreated(View view, Bundle savedInstanceState) {
-		//super.onViewCreated(view, savedInstanceState);
-		Button b = (Button) view.findViewById(R.id.profile_submit);
-		b.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				// Perform action on click
-				submit();
-			}
-		});
-	}
-	
-	public void submit() {
-		Intent i = new Intent(ProfilemainActivity.this,MainActivity.class);
-		startActivity(i);
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		//username = profileName.getText().toString();
+		
+        if(v.getId()==R.id.profile_submit)
+        {
+        	//Log.i("APP","ZNM");
+        	//i = new Intent(ProfilemainActivity.this,MainActivity.class);
+        	//i.putExtra("username", username);
+        	//startActivity(i);
+        }
 	}
 }

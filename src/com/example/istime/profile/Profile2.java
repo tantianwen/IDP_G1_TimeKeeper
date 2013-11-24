@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupWindow;
@@ -19,6 +20,7 @@ import com.example.istime.R;
 
 public class Profile2 extends FragmentActivity {
 
+	Button submit;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class Profile2 extends FragmentActivity {
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
+		addListenerOnButton();
 		/*Spinner spinner = (Spinner) findViewById(R.id.day_choice);
 
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
@@ -47,6 +50,25 @@ public class Profile2 extends FragmentActivity {
 		 * });
 		 */
 
+	}
+	
+	public void addListenerOnButton(){
+		
+		submit = (Button) findViewById(R.id.profile_submit);
+		 
+		submit.setOnClickListener(new OnClickListener() {
+ 
+			@Override
+			public void onClick(View arg0) {
+ 
+				System.out.println("Click");
+				Intent i = new Intent(Profile2.this,MainActivity.class);
+			  //Intent browserIntent = new Intent(Intent.ACTION_VIEW, MainActivity.class);
+			    startActivity(i);
+ 
+			}
+ 
+		});
 	}
 
 	private PopupWindow popupWindow;

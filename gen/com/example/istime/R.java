@@ -9,24 +9,20 @@ package com.example.istime;
 
 public final class R {
     public static final class array {
-        public static final int days_array=0x7f070000;
-        public static final int pref_example_list_titles=0x7f070001;
-        public static final int pref_example_list_values=0x7f070002;
-        public static final int pref_sync_frequency_titles=0x7f070003;
-        public static final int pref_sync_frequency_values=0x7f070004;
+        public static final int days_array=0x7f060000;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int black_bg=0x7f080006;
-        public static final int blue_bg=0x7f080003;
-        public static final int green_bg=0x7f080001;
+        public static final int black_bg=0x7f070006;
+        public static final int blue_bg=0x7f070003;
+        public static final int green_bg=0x7f070001;
         /**  Each color is one segment 
          */
-        public static final int orange_bg=0x7f080000;
-        public static final int purple_bg=0x7f080004;
-        public static final int torquise_bg=0x7f080002;
-        public static final int white_bg=0x7f080005;
+        public static final int orange_bg=0x7f070000;
+        public static final int purple_bg=0x7f070004;
+        public static final int torquise_bg=0x7f070002;
+        public static final int white_bg=0x7f070005;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -35,127 +31,145 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_set_to_bottom=0x7f050002;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_set_to_bottom=0x7f040002;
+        public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int addcategory=0x7f020000;
-        public static final int animationlist=0x7f020001;
-        public static final int family_icon=0x7f020002;
-        public static final int friend_icon=0x7f020003;
-        public static final int ic_action_content_new=0x7f020004;
-        public static final int ic_action_search=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_menu_name=0x7f020007;
-        public static final int ic_navigation_drawer=0x7f020008;
-        public static final int is_timeword=0x7f020009;
-        public static final int istime_logo=0x7f02000a;
-        public static final int menu_icon=0x7f02000b;
-        public static final int nagivation_arrow1=0x7f02000c;
-        public static final int nagivation_arrow2=0x7f02000d;
-        public static final int personal_time_icon=0x7f02000e;
-        public static final int textfield_border=0x7f02000f;
+        public static final int aboutustext=0x7f020000;
+        public static final int addcategory=0x7f020001;
+        public static final int animationlist=0x7f020002;
+        public static final int boarder=0x7f020003;
+        public static final int boarder2=0x7f020004;
+        public static final int btn_blue=0x7f020005;
+        public static final int btn_green=0x7f020006;
+        public static final int btn_purple=0x7f020007;
+        public static final int btn_red=0x7f020008;
+        public static final int btn_yellow=0x7f020009;
+        public static final int family_icon=0x7f02000a;
+        public static final int faq=0x7f02000b;
+        public static final int friend_icon=0x7f02000c;
+        public static final int ic_action_content_new=0x7f02000d;
+        public static final int ic_action_search=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int ic_menu_name=0x7f020010;
+        public static final int ic_navigation_drawer=0x7f020011;
+        public static final int is_timeword=0x7f020012;
+        public static final int istime_logo=0x7f020013;
+        public static final int menu_icon=0x7f020014;
+        public static final int nagivation_arrow1=0x7f020015;
+        public static final int nagivation_arrow2=0x7f020016;
+        public static final int personal_time_icon=0x7f020017;
+        public static final int textfield_border=0x7f020018;
     }
     public static final class id {
-        public static final int CheckBox01=0x7f0b0044;
-        public static final int CheckBox02=0x7f0b0046;
-        public static final int CheckBox03=0x7f0b0045;
-        public static final int CheckBox04=0x7f0b0043;
-        public static final int CheckBox05=0x7f0b0041;
-        public static final int CheckBox06=0x7f0b0047;
-        public static final int CheckBox07=0x7f0b004b;
-        public static final int EditText01=0x7f0b0049;
-        public static final int Profile1=0x7f0b0031;
-        public static final int Profile2=0x7f0b003f;
-        public static final int Profile_DailyNotificationTimePicker=0x7f0b000c;
-        public static final int Profile_btnAdd=0x7f0b0007;
-        public static final int Profile_btnCancel=0x7f0b0008;
-        public static final int TextView01=0x7f0b0048;
-        public static final int ToTime=0x7f0b002f;
-        public static final int action_addNewCat=0x7f0b0058;
-        public static final int action_forgot_password=0x7f0b0057;
-        public static final int action_search=0x7f0b0055;
-        public static final int action_settings=0x7f0b0056;
-        public static final int btnProfileDailyNotificationCancel=0x7f0b000e;
-        public static final int btnProfileDailyNotificationSubmit=0x7f0b000d;
-        public static final int calendarView1=0x7f0b0009;
-        public static final int category=0x7f0b0029;
-        public static final int category_label=0x7f0b0037;
-        public static final int checkBox1=0x7f0b0042;
-        public static final int day_choice=0x7f0b0050;
-        public static final int editText1=0x7f0b004a;
-        public static final int edit_message=0x7f0b0036;
-        public static final int edit_message2=0x7f0b0040;
-        public static final int email=0x7f0b0013;
-        public static final int eventName=0x7f0b0027;
-        public static final int fromTime=0x7f0b002b;
-        public static final int hour_label=0x7f0b0038;
-        public static final int imageView1=0x7f0b003b;
-        public static final int imageView2=0x7f0b003e;
-        public static final int isTime_LogoImage=0x7f0b0012;
-        public static final int layout=0x7f0b0032;
-        public static final int lblDailyNotification=0x7f0b000b;
-        public static final int login=0x7f0b0015;
-        public static final int login_form=0x7f0b0011;
-        public static final int login_status=0x7f0b000f;
-        public static final int login_status_message=0x7f0b0010;
-        public static final int main_menu_category_name1=0x7f0b001f;
-        public static final int main_menu_category_name2=0x7f0b0021;
-        public static final int main_menu_category_percentage1=0x7f0b0020;
-        public static final int main_menu_category_percentage2=0x7f0b0022;
-        public static final int main_menu_from=0x7f0b0018;
-        public static final int main_menu_from_date=0x7f0b0019;
-        public static final int main_menu_performance=0x7f0b001c;
-        public static final int main_menu_performance_info1=0x7f0b001d;
-        public static final int main_menu_performance_info2=0x7f0b001e;
-        public static final int main_menu_to=0x7f0b001a;
-        public static final int main_menu_to_date=0x7f0b001b;
-        public static final int main_menu_view_calendar=0x7f0b0024;
-        public static final int main_menu_view_summary=0x7f0b0023;
-        public static final int menuitem_detail=0x7f0b0051;
-        public static final int menuitem_detail_container=0x7f0b0025;
-        public static final int menuitem_list=0x7f0b0026;
-        public static final int pager=0x7f0b0054;
-        public static final int password=0x7f0b0014;
-        public static final int profile1_table=0x7f0b0033;
-        public static final int profile_AddNewCatName=0x7f0b0005;
-        public static final int profile_addCatNumOfHours=0x7f0b0006;
-        public static final int profile_addCategory=0x7f0b0000;
-        public static final int profile_dailyNotification=0x7f0b000a;
-        public static final int profile_imageUpload=0x7f0b0001;
-        public static final int profile_lbCatName=0x7f0b0003;
-        public static final int profile_lbHoursSpent=0x7f0b0004;
-        public static final int profile_lblFamily=0x7f0b0039;
-        public static final int profile_lblFriends=0x7f0b003c;
-        public static final int profile_lblName=0x7f0b0034;
-        public static final int profile_submit=0x7f0b004c;
-        public static final int profile_txtFamilyHr=0x7f0b003a;
-        public static final int profile_txtFriendsHr=0x7f0b003d;
-        public static final int profile_txtName=0x7f0b0035;
-        public static final int profilemain_dummy=0x7f0b0052;
-        public static final int saveButton=0x7f0b002e;
-        public static final int section_label=0x7f0b0053;
-        public static final int selectedDate=0x7f0b002a;
-        public static final int sign_in_button=0x7f0b0016;
-        public static final int textView1=0x7f0b0002;
-        public static final int textView2=0x7f0b002d;
-        public static final int textView3=0x7f0b0030;
-        public static final int textView4=0x7f0b0028;
-        public static final int textView5=0x7f0b002c;
-        public static final int timePicker2=0x7f0b004f;
-        public static final int weekly_notification_cancel=0x7f0b004e;
-        public static final int weekly_notification_submit=0x7f0b004d;
-        public static final int welcome_text=0x7f0b0017;
+        public static final int AboutUsHeader=0x7f0a0051;
+        public static final int AbtUsBtn=0x7f0a004c;
+        public static final int CheckBox01=0x7f0a0044;
+        public static final int CheckBox02=0x7f0a0046;
+        public static final int CheckBox03=0x7f0a0045;
+        public static final int CheckBox04=0x7f0a0043;
+        public static final int CheckBox05=0x7f0a0041;
+        public static final int CheckBox06=0x7f0a0047;
+        public static final int EditText01=0x7f0a0049;
+        public static final int FAQBtn=0x7f0a004e;
+        public static final int FAQHeader=0x7f0a0054;
+        public static final int FromDate=0x7f0a000d;
+        public static final int FromTime=0x7f0a000a;
+        public static final int Profile1=0x7f0a0031;
+        public static final int Profile2=0x7f0a003f;
+        public static final int Profile_DailyNotificationTimePicker=0x7f0a001a;
+        public static final int Profile_btnAdd=0x7f0a0015;
+        public static final int Profile_btnCancel=0x7f0a0016;
+        public static final int Setting_AbtUsbtnOk=0x7f0a0050;
+        public static final int Setting_FAQbtnOk=0x7f0a0053;
+        public static final int TextView01=0x7f0a0048;
+        public static final int ToDate=0x7f0a0008;
+        public static final int ToTime=0x7f0a002f;
+        public static final int ToTimeButton=0x7f0a0009;
+        public static final int UpdatesBtn=0x7f0a004d;
+        public static final int action_addNewCat=0x7f0a0060;
+        public static final int action_forgot_password=0x7f0a005f;
+        public static final int action_search=0x7f0a005d;
+        public static final int action_settings=0x7f0a005e;
+        public static final int btnProfileDailyNotificationCancel=0x7f0a001c;
+        public static final int btnProfileDailyNotificationSubmit=0x7f0a001b;
+        public static final int calendarView1=0x7f0a0017;
+        public static final int category=0x7f0a0003;
+        public static final int category_label=0x7f0a0037;
+        public static final int chartAnalysis=0x7f0a002c;
+        public static final int checkBox1=0x7f0a0042;
+        public static final int day_choice=0x7f0a0058;
+        public static final int editText1=0x7f0a004a;
+        public static final int edit_message=0x7f0a0036;
+        public static final int edit_message2=0x7f0a0040;
+        public static final int email=0x7f0a0021;
+        public static final int eventName=0x7f0a0001;
+        public static final int fromTime=0x7f0a0005;
+        public static final int hour_label=0x7f0a0038;
+        public static final int imageView1=0x7f0a003b;
+        public static final int imageView2=0x7f0a003e;
+        public static final int isTime_LogoImage=0x7f0a0020;
+        public static final int layout=0x7f0a0032;
+        public static final int lblDailyNotification=0x7f0a0019;
+        public static final int login=0x7f0a0023;
+        public static final int login_form=0x7f0a001f;
+        public static final int login_status=0x7f0a001d;
+        public static final int login_status_message=0x7f0a001e;
+        public static final int main_menu_from=0x7f0a0026;
+        public static final int main_menu_from_date=0x7f0a0027;
+        public static final int main_menu_performance=0x7f0a002a;
+        public static final int main_menu_performance_info1=0x7f0a002b;
+        public static final int main_menu_to=0x7f0a0028;
+        public static final int main_menu_to_date=0x7f0a0029;
+        public static final int menuitem_detail=0x7f0a0059;
+        public static final int menuitem_detail_container=0x7f0a002d;
+        public static final int menuitem_list=0x7f0a002e;
+        public static final int pager=0x7f0a005c;
+        public static final int password=0x7f0a0022;
+        public static final int profile1_table=0x7f0a0033;
+        public static final int profile_AddNewCatName=0x7f0a0013;
+        public static final int profile_addCatNumOfHours=0x7f0a0014;
+        public static final int profile_addCategory=0x7f0a000f;
+        public static final int profile_dailyNotification=0x7f0a0018;
+        public static final int profile_imageUpload=0x7f0a0010;
+        public static final int profile_lbCatName=0x7f0a0011;
+        public static final int profile_lbHoursSpent=0x7f0a0012;
+        public static final int profile_lblFamily=0x7f0a0039;
+        public static final int profile_lblFriends=0x7f0a003c;
+        public static final int profile_lblName=0x7f0a0034;
+        public static final int profile_settings_abtUsScreen=0x7f0a004f;
+        public static final int profile_settings_settingsScreen=0x7f0a0052;
+        public static final int profile_submit=0x7f0a004b;
+        public static final int profile_txtFamilyHr=0x7f0a003a;
+        public static final int profile_txtFriendsHr=0x7f0a003d;
+        public static final int profile_txtName=0x7f0a0035;
+        public static final int profilemain_dummy=0x7f0a005a;
+        public static final int saveButton=0x7f0a000e;
+        public static final int section_label=0x7f0a005b;
+        public static final int selectedDate=0x7f0a0004;
+        public static final int sign_in_button=0x7f0a0024;
+        public static final int textView1=0x7f0a0000;
+        public static final int textView10=0x7f0a000c;
+        public static final int textView2=0x7f0a0006;
+        public static final int textView3=0x7f0a0030;
+        public static final int textView4=0x7f0a0002;
+        public static final int textView5=0x7f0a0007;
+        public static final int textView9=0x7f0a000b;
+        public static final int timePicker2=0x7f0a0057;
+        public static final int weekly_notification_cancel=0x7f0a0056;
+        public static final int weekly_notification_submit=0x7f0a0055;
+        public static final int welcome_text=0x7f0a0025;
     }
     public static final class layout {
-        public static final int activity_add_profile=0x7f030000;
-        public static final int activity_calendar=0x7f030001;
-        public static final int activity_calendar_day_view=0x7f030002;
-        public static final int activity_daily_notification=0x7f030003;
-        public static final int activity_login=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int activity_menuitem_detail=0x7f030006;
+        public static final int activity_add=0x7f030000;
+        public static final int activity_add_profile=0x7f030001;
+        public static final int activity_calendar=0x7f030002;
+        public static final int activity_calendar_day_view=0x7f030003;
+        public static final int activity_daily_notification=0x7f030004;
+        public static final int activity_login=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_menuitem_detail=0x7f030007;
         /** 
     Layout alias to replace the single-pane version of the layout with a
     two-pane version on Large screens.
@@ -171,121 +185,112 @@ public final class R {
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     
          */
-        public static final int activity_menuitem_list=0x7f030007;
-        public static final int activity_menuitem_twopane=0x7f030008;
-        public static final int activity_new_calendar_event=0x7f030009;
-        public static final int activity_profile1=0x7f03000a;
-        public static final int activity_profile2=0x7f03000b;
-        public static final int activity_summary_main=0x7f03000c;
-        public static final int activity_weekly_notification=0x7f03000d;
-        public static final int fragment_menuitem_detail=0x7f03000e;
-        public static final int fragment_profilemain_dummy=0x7f03000f;
-        public static final int profilemain=0x7f030010;
+        public static final int activity_menuitem_list=0x7f030008;
+        public static final int activity_menuitem_twopane=0x7f030009;
+        public static final int activity_new_calendar_event=0x7f03000a;
+        public static final int activity_profile1=0x7f03000b;
+        public static final int activity_profile2=0x7f03000c;
+        public static final int activity_settings=0x7f03000d;
+        public static final int activity_settings_abtus=0x7f03000e;
+        public static final int activity_settings_faq=0x7f03000f;
+        public static final int activity_weekly_notification=0x7f030010;
+        public static final int fragment_menuitem_detail=0x7f030011;
+        public static final int fragment_profilemain_dummy=0x7f030012;
+        public static final int profilemain=0x7f030013;
     }
     public static final class menu {
-        public static final int actionbar=0x7f0a0000;
-        public static final int add_profile=0x7f0a0001;
-        public static final int calendar=0x7f0a0002;
-        public static final int calendar_dayview=0x7f0a0003;
-        public static final int daily_notification=0x7f0a0004;
-        public static final int login=0x7f0a0005;
-        public static final int main=0x7f0a0006;
-        public static final int profile=0x7f0a0007;
-        public static final int profile1=0x7f0a0008;
-        public static final int profile2=0x7f0a0009;
-        public static final int profile_actionbar=0x7f0a000a;
-        public static final int profilemain=0x7f0a000b;
-        public static final int summary_main=0x7f0a000c;
-        public static final int weekly_notification=0x7f0a000d;
+        public static final int actionbar=0x7f090000;
+        public static final int add=0x7f090001;
+        public static final int add_profile=0x7f090002;
+        public static final int calendar=0x7f090003;
+        public static final int calendar_dayview=0x7f090004;
+        public static final int chart=0x7f090005;
+        public static final int daily_notification=0x7f090006;
+        public static final int login=0x7f090007;
+        public static final int main=0x7f090008;
+        public static final int profile=0x7f090009;
+        public static final int profile1=0x7f09000a;
+        public static final int profile2=0x7f09000b;
+        public static final int profile_actionbar=0x7f09000c;
+        public static final int profilemain=0x7f09000d;
+        public static final int settings=0x7f09000e;
+        public static final int summary_main=0x7f09000f;
+        public static final int weekly_notification=0x7f090010;
     }
     public static final class string {
-        public static final int ISTIME=0x7f060005;
-        public static final int ab_addNewCat=0x7f060039;
-        public static final int action_forgot_password=0x7f06001b;
-        public static final int action_search=0x7f06000e;
-        public static final int action_settings=0x7f060003;
-        public static final int action_sign_in_register=0x7f060019;
-        public static final int action_sign_in_short=0x7f06001a;
-        public static final int app_name=0x7f060000;
-        public static final int button_add=0x7f060027;
-        public static final int button_cancel=0x7f060028;
-        public static final int button_delete=0x7f060029;
-        public static final int button_submit=0x7f060036;
-        public static final int calendarDayView=0x7f060015;
-        public static final int calendarName=0x7f060014;
-        public static final int category=0x7f06002a;
-        public static final int error_field_required=0x7f060020;
-        public static final int error_incorrect_password=0x7f06001f;
-        public static final int error_invalid_email=0x7f06001d;
-        public static final int error_invalid_password=0x7f06001e;
-        public static final int family=0x7f06002c;
-        public static final int family_time=0x7f06002e;
-        public static final int friend=0x7f06002d;
-        public static final int friend_time=0x7f06002f;
-        public static final int hello_world=0x7f060004;
-        public static final int hour=0x7f06002b;
-        public static final int login_details=0x7f060002;
-        public static final int login_progress_signing_in=0x7f06001c;
-        public static final int lunch_time=0x7f060031;
-        public static final int mainmenu_name=0x7f060001;
-        public static final int menuIcon=0x7f06000d;
-        public static final int pref_default_display_name=0x7f06003f;
-        public static final int pref_description_social_recommendations=0x7f06003d;
-        /**  Example settings for Data & Sync 
-         */
-        public static final int pref_header_data_sync=0x7f060041;
-        /**  Strings related to Settings 
- Example General settings 
-         */
-        public static final int pref_header_general=0x7f06003b;
-        /**  Example settings for Notifications 
-         */
-        public static final int pref_header_notifications=0x7f060044;
-        public static final int pref_ringtone_silent=0x7f060047;
-        public static final int pref_title_add_friends_to_messages=0x7f060040;
-        public static final int pref_title_display_name=0x7f06003e;
-        public static final int pref_title_new_message_notifications=0x7f060045;
-        public static final int pref_title_ringtone=0x7f060046;
-        public static final int pref_title_social_recommendations=0x7f06003c;
-        public static final int pref_title_sync_frequency=0x7f060042;
-        public static final int pref_title_system_sync_settings=0x7f060043;
-        public static final int pref_title_vibrate=0x7f060048;
-        public static final int profileName=0x7f060021;
+        public static final int AboutUsText=0x7f05003e;
+        public static final int FAQ=0x7f05003d;
+        public static final int ISTIME=0x7f050005;
+        public static final int ab_addNewCat=0x7f05003c;
+        public static final int action_forgot_password=0x7f05001e;
+        public static final int action_search=0x7f05000e;
+        public static final int action_settings=0x7f050003;
+        public static final int action_sign_in_register=0x7f05001c;
+        public static final int action_sign_in_short=0x7f05001d;
+        public static final int app_name=0x7f050000;
+        public static final int button_add=0x7f05002a;
+        public static final int button_cancel=0x7f05002b;
+        public static final int button_delete=0x7f05002c;
+        public static final int button_submit=0x7f050039;
+        public static final int calendarDayView=0x7f050018;
+        public static final int calendarName=0x7f050017;
+        public static final int category=0x7f05002d;
+        public static final int error_field_required=0x7f050023;
+        public static final int error_incorrect_password=0x7f050022;
+        public static final int error_invalid_email=0x7f050020;
+        public static final int error_invalid_password=0x7f050021;
+        public static final int family=0x7f05002f;
+        public static final int family_time=0x7f050031;
+        public static final int friend=0x7f050030;
+        public static final int friend_time=0x7f050032;
+        public static final int hello_world=0x7f050004;
+        public static final int hour=0x7f05002e;
+        public static final int login_details=0x7f050002;
+        public static final int login_progress_signing_in=0x7f05001f;
+        public static final int lunch_time=0x7f050034;
+        public static final int mainmenu_name=0x7f050001;
+        public static final int menuIcon=0x7f05000d;
+        public static final int profileName=0x7f050024;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f060017;
-        public static final int prompt_password=0x7f060018;
-        public static final int set_profile_time_message=0x7f060024;
-        public static final int set_profile_time_message2=0x7f060025;
-        public static final int set_profile_time_message3=0x7f060026;
-        public static final int title_activity_add_profile=0x7f060034;
-        public static final int title_activity_calendar_day_view=0x7f060013;
-        public static final int title_activity_calendar_main=0x7f06000b;
-        public static final int title_activity_daily_notification=0x7f060035;
-        public static final int title_activity_login=0x7f060016;
-        public static final int title_activity_new_calendar_event=0x7f060012;
-        public static final int title_activity_profile=0x7f06000a;
-        public static final int title_activity_profile1=0x7f060032;
-        public static final int title_activity_profile2=0x7f060033;
-        public static final int title_activity_profilemain=0x7f060010;
-        public static final int title_activity_settings=0x7f06003a;
-        public static final int title_activity_summary_main=0x7f06000c;
-        public static final int title_activity_weekly_notification=0x7f060037;
-        public static final int title_menuitem_detail=0x7f060009;
-        public static final int title_menuitem_list=0x7f060008;
-        public static final int title_menuselection_detail=0x7f060007;
-        public static final int title_menuselection_list=0x7f060006;
-        public static final int title_section1=0x7f060022;
-        public static final int title_section2=0x7f060023;
-        public static final int title_section3=0x7f060011;
-        public static final int uploadImage=0x7f060038;
-        public static final int welcome_msg=0x7f06000f;
-        public static final int work_time=0x7f060030;
+        public static final int prompt_email=0x7f05001a;
+        public static final int prompt_password=0x7f05001b;
+        public static final int set_profile_time_message=0x7f050027;
+        public static final int set_profile_time_message2=0x7f050028;
+        public static final int set_profile_time_message3=0x7f050029;
+        public static final int title_activity_add=0x7f050016;
+        public static final int title_activity_add_profile=0x7f050037;
+        public static final int title_activity_calendar_day_view=0x7f050013;
+        public static final int title_activity_calendar_main=0x7f05000b;
+        public static final int title_activity_chart=0x7f050014;
+        public static final int title_activity_daily_notification=0x7f050038;
+        public static final int title_activity_login=0x7f050019;
+        public static final int title_activity_new_calendar_event=0x7f050012;
+        public static final int title_activity_profile=0x7f05000a;
+        public static final int title_activity_profile1=0x7f050035;
+        public static final int title_activity_profile2=0x7f050036;
+        public static final int title_activity_profilemain=0x7f050010;
+        public static final int title_activity_settings=0x7f050015;
+        public static final int title_activity_summary_main=0x7f05000c;
+        public static final int title_activity_weekly_notification=0x7f05003a;
+        public static final int title_menuitem_detail=0x7f050009;
+        public static final int title_menuitem_list=0x7f050008;
+        public static final int title_menuselection_detail=0x7f050007;
+        public static final int title_menuselection_list=0x7f050006;
+        public static final int title_section1=0x7f050025;
+        public static final int title_section2=0x7f050026;
+        public static final int title_section3=0x7f050011;
+        public static final int uploadImage=0x7f05003b;
+        public static final int welcome_msg=0x7f05000f;
+        public static final int work_time=0x7f050033;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
 
     
 
@@ -293,6 +298,10 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         @style/Theme.AppCompat.Light
+
+
+
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -306,30 +315,20 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090004;
-        public static final int LoginFormContainer=0x7f090005;
-        public static final int MyActionBar=0x7f090003;
-        /**  <item name="android:actionBarStyle">@style/Theme.MyAppTheme.ActionBar</item>
- <item name="android:background">@color/white_bg</item>
-      	<item name="android:windowBackground">@color/blue_bg</item>
-      	<item name="android:colorBackground">@color/white_bg</item>
- <item name="android:actionBarStyle">@style/MyActionBar</item> 
-         */
-        public static final int Theme_MyAppTheme=0x7f090001;
-        /**  <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@color/orange_bg</item>
-    </style>
-         */
-        public static final int Theme_ProfileTheme=0x7f090002;
-    }
-    public static final class xml {
-        public static final int pref_data_sync=0x7f040000;
-        public static final int pref_general=0x7f040001;
-        public static final int pref_headers=0x7f040002;
-        public static final int pref_notification=0x7f040003;
+        public static final int AppTheme=0x7f080007;
+        public static final int ButtonText=0x7f080009;
+        public static final int LoginFormContainer=0x7f080008;
+        public static final int MainActionBar=0x7f080002;
+        public static final int ProfileActionBar=0x7f080004;
+        public static final int SettingActionBar=0x7f080006;
+        public static final int SettingText=0x7f08000b;
+        public static final int SmallButtonText=0x7f08000a;
+        public static final int Theme_MyAppTheme=0x7f080001;
+        public static final int Theme_ProfileTheme=0x7f080003;
+        public static final int Theme_SettingTheme=0x7f080005;
     }
 }
